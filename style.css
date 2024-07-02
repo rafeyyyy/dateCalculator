@@ -1,0 +1,118 @@
+* {
+    color: #fff;
+}
+
+*::selection {
+    display: none;
+}
+
+.blur {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-image: url('https://images.pexels.com/photos/26653747/pexels-photo-26653747/free-photo-of-the-milky-way-over-the-lake-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(6px);
+}
+
+.container {
+    padding-top: 100px;
+    padding-bottom: 10px;  
+}
+
+.container h1 {
+    margin-bottom: 30px;
+    font-size: 4vw;
+}
+
+.result {
+    border: 2px solid #fff;
+    min-height: 32vh;
+    width: 40vw;
+    margin-top: 30px;
+    border-radius: 8px;
+
+}
+
+.result-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+    /* margin-top: 60px; */
+}
+
+.result-inner h1 {
+    transition: scale 500ms ease;
+    scale: 1;
+    font-size: 3.5vw;
+}
+
+
+.result-inner h2 {
+    font-weight: 900;
+    transition: all 500ms ease; 
+    scale: 0;
+    font-size: 3vw;
+}
+
+
+.result-inner h2 span {
+    font-weight: 400;
+}
+
+.date {
+    width: 100%;
+    height: 100%;
+    background-color: #13121283;
+    border: 1px solid rgba(255, 255, 255, 0.568);
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 1.5vw;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" height="20" viewBox="0 0 24 24" width="20"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zm-7-9c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/></svg>') no-repeat;
+    background-position: right 5px center; /* Position the icon */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-inline:  8px;
+    padding-left: 10px;
+}
+
+@media (max-width: 800px) {
+    .row {
+        /* display: flex; */
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+
+    .row .cols {
+        width: 43vw;
+        margin-bottom: 10px;
+    }
+
+    .date {
+        font-size: 2.7vw;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" height="15" viewBox="0 0 24 24" width="15"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zm-7-9c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/></svg>') no-repeat;
+        background-position: right 5px center; /* Position the icon */
+    }
+
+
+
+
+}
+
